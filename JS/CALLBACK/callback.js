@@ -181,19 +181,224 @@
 // const tanı= tan.map((x)=>x*5);
 
 // console.log(tanı)
-price = [105,95,85,120]
+// price = [105,95,85,120]
 
-const products = price.map(function(d){
-    if(d>100){
-      return   (d*1.1).toFixed(2);
-    }
-    else{
-       return (d*1.15).toFixed(2)
-    }
+// const products = price.map(function(d){
+//     if(d>100){
+//       return   (d*1.1).toFixed(2);
+//     }
+//     else{
+//        return (d*1.15).toFixed(2)
+//     }
 
-})
+// })
 
-console.log(products)
+// console.log(products)
 
+// console.log("Hello.");
+// setTimeout(function() {
+//   console.log("Goodbye!");
+// }, 2000);
+// console.log("Hello again!");
+
+// ****************Asynchronous ****************
+
+// let test = function(){
+//     console.log("Star of code");
+
+//     alert("Notice Me!");
+
+//     console.log("End of code");
+// };
+
+
+// let test2 = function() {
+//     console.log("Now T get attention.");
+// };
+
+// test();
+// test2();
+
+// let test = function(){
+//     setTimeout(function() {
+//         console.log("Star of code");
+
+//         alert("Notice Me!");
+    
+//         console.log("End of code");
+//     }, 5000)
+    
+// };
+
+
+// let test2 = function() {
+//     console.log("Now T get attention.");
+// };
+
+// test();
+// test2();
+
+// function mesut(){
+//     console.log("merhaba Mesut")
+// }
+
+// let task = setTimeout(mesut,3000);
+
+// console.log("this message is shown first");
+// console.log("ID: ", task);
+
+// // program to stop the setTimeout() method
+// let count = 0;
+
+// // function creation
+// function increaseCount() {
+//   count += 1;
+//   console.log(count);
+// }
+
+// let id = setTimeout(increaseCount, 3000);
+// clearTimeout(id);
+// console.log('setTimeout is stopped.');
+// expected output: setTimeout is stopped
+
+// function showTime() {
+//     let dateTime = new Date();
+//     let time = dateTime.toLocaleTimeString();
+    
+//     document.querySelector(".sum").innerText = time
+
+//     setTimeout(showTime,3000)
+// }
+
+// // let a = showTime()
+// // console.log(a) 
+// showTime()
+
+
+// let dateTime = new Date()
+
+// console.log(dateTime)
+
+// program to stop the setInterval() method after five times
+// let count = 0;
+// let interval = setInterval(function () {
+//   count += 1;
+//   if (count === 5) {
+//     clearInterval(interval);
+//   }
+//   let dateTime = new Date();
+//   let time = dateTime.toLocaleTimeString();
+//   console.log(time);
+// }, 2000);
+
+// console.log(time)
+
+// console.log(time)
+
+
+// let count = 0
+// let my = setInterval(()=>{
+//     if( count ===10){
+//       clearInterval(my)
+//     }  
+//    count += 1
+//    console.log(count)
+// },2000)
+
+// let myCount = 0
+// let myInterval = setInterval(function(){
+//      myCount += 1
+//      if(myCount===6){
+//        clearInterval(myInterval)
+//      }
+
+//      let asTime= new Date()
+//      let myTime= asTime.toLocaleTimeString();
+//      console.log(myTime)
+// },2000)
+
+// setTimeout(() => {
+//   console.log('john:Hi');
+//   setTimeout(() => {
+//     console.log('Sarah: Hello');
+//     setTimeout(() => {
+//       console.log('John: How Are you?');
+//       setTimeout(() => {
+//         console.log('Fine and you?');
+//       }, 1000);
+//     }, 1000);
+//   }, 1000);
+// }, 1000);
+
+// ******** Promise **************
+
+
+// const cayDemle() =>{
+//   suyuKaynat()
+//      .then((durum1)=>{
+//        console.log(durum1);
+//        return cayEkle();
+//      })
+//      .then((durum2)=>{
+//        console.log(durum2)
+//        bekle(); 
+//        return afiyet();
+//      })
+//      .then((durum3)=>{
+//        console.log(durum3);
+//      })
+//      .catch((err)=>{
+//     console.log(err);
+//      })
+// };
+
+
+// 'cay hazır afiyet olsun'
+
+// callback example 
+
+/* const todos =[
+    {title: "Todo 1", description:"JS calıs" },
+    {title: "Todo 2", description:"JS ogren" },
+    {title: "Todo 3", description:"JS uygula" },
+]
+
+let todoListElement = document.getElementById("todoList");
+
+function todoList(){
+    setTimeout(()=>{
+        let todoItems=""
+        todos.forEach(item=>{
+            todoItems +=`
+            <li>
+                  <b>${item.title}</b>
+                  <p>${item.description}</p>
+            </li>`
+        })
+        todoListElement.innerHTML = todoItems;
+    }, 1000)
+}
+
+// todoList()
+
+
+function newTodo(todo, callback){
+    setTimeout(()=>{
+        todos.push(todo);
+        callback()
+    },2000)
+}
+
+newTodo(
+    {title: "Todo 4",
+    description: "Umutlu ol.."
+},
+todoList
+) */
+
+
+
+
+ 
 
 
